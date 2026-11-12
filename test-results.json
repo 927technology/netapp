@@ -1,0 +1,2140 @@
+{
+  "all_disks_live_capacity_verified": true,
+  "boot_media_writes_performed": 0,
+  "boot_mode": "RAM-only ELF64 container with 32-bit entry and native Linux BIOS setup",
+  "console_host": "mrv.na_1",
+  "controller_checks": {
+    "cpu_online_threads": 4,
+    "cpu_physical_cores": 2,
+    "cpu_pinned_checksum_iterations_per_thread": 16,
+    "cpu_pinned_checksum_passed": true,
+    "cpu_runtime_hotplug_passed": true,
+    "data_nic_driver_load_passed": true,
+    "data_nic_ports_detected": {
+      "igb": 4,
+      "ixgbe": 2
+    },
+    "data_nic_traffic_tested": false,
+    "firmware_unknown_e820_region": {
+      "end": "0x23fffffff",
+      "size_bytes": 2147483648,
+      "start": "0x1c0000000"
+    },
+    "hwmon_sensors_registered": true,
+    "monitoring_checks": {
+      "bmc": {
+        "battery_temperature_c": 31,
+        "cpu_overheat": false,
+        "cpu_thermal_trip": false,
+        "device_available": true,
+        "exhaust_temperature_c": 41,
+        "firmware_revision": "1.00",
+        "intake_temperature_c": 36,
+        "ipmi_version": "2.0",
+        "manufacturer_id": 789,
+        "memory_overheat": false,
+        "psu2_fault": true
+      },
+      "checked_at_utc": "2026-11-12T00:21:24.569513+00:00",
+      "cpu_critical_alarms": [
+        0,
+        0
+      ],
+      "cpu_critical_temperatures_c": [
+        101,
+        101
+      ],
+      "cpu_idle_temperatures_c": [
+        42,
+        40
+      ],
+      "cpu_load_check": {
+        "completed": true,
+        "critical_alarms": false,
+        "duration_seconds": 40,
+        "peak_temperatures_c": [
+          48,
+          46
+        ],
+        "sustained_stress_test": false,
+        "temperature_limit_c": 85
+      },
+      "cpu_temperature_driver": "coretemp",
+      "enclosure_fans": [
+        {
+          "element": 0,
+          "rpm": 3020,
+          "status": "ok"
+        },
+        {
+          "element": 1,
+          "rpm": 3000,
+          "status": "ok"
+        },
+        {
+          "element": 2,
+          "rpm": 3000,
+          "status": "ok"
+        },
+        {
+          "element": 3,
+          "rpm": 3000,
+          "status": "ok"
+        }
+      ],
+      "enclosure_temperature_sensors": [
+        {
+          "element": 0,
+          "status": "ok",
+          "temperature_c": 23
+        },
+        {
+          "element": 1,
+          "status": "ok",
+          "temperature_c": 27
+        },
+        {
+          "element": 2,
+          "status": "ok",
+          "temperature_c": 28
+        },
+        {
+          "element": 3,
+          "status": "ok",
+          "temperature_c": 33
+        },
+        {
+          "element": 4,
+          "status": "ok",
+          "temperature_c": 29
+        },
+        {
+          "element": 5,
+          "status": "ok",
+          "temperature_c": 29
+        },
+        {
+          "element": 6,
+          "status": "ok",
+          "temperature_c": 39
+        },
+        {
+          "element": 7,
+          "reported_raw_c": 0,
+          "status": "unknown",
+          "temperature_c": null
+        }
+      ],
+      "enclosure_voltage_sensors": [
+        {
+          "element": 0,
+          "status": "ok",
+          "volts": 5.07
+        },
+        {
+          "element": 1,
+          "status": "ok",
+          "volts": 12.3
+        },
+        {
+          "element": 2,
+          "status": "unrecoverable",
+          "volts": 0.0
+        },
+        {
+          "element": 3,
+          "status": "unrecoverable",
+          "volts": 0.0
+        }
+      ],
+      "fan_settings_changed": false,
+      "persistent_os_installed": false,
+      "power_supplies": [
+        {
+          "ac_fail": false,
+          "dc_fail": false,
+          "element": 0,
+          "off": false,
+          "status": "ok"
+        },
+        {
+          "ac_fail": true,
+          "alarm_explanation": "AC input disconnected; PSU hardware failure not established",
+          "bmc_name": "PSU2",
+          "dc_fail": true,
+          "element": 1,
+          "off": true,
+          "physical_ac_confirmation": "user-confirmed-not-connected-to-live-ac",
+          "present": true,
+          "status": "critical"
+        }
+      ],
+      "power_supply_redundancy_verified": false,
+      "temporary_transfer_server_stopped": true,
+      "watchdog": {
+        "action": "none",
+        "armed_by_test": false,
+        "expiration_flags": [],
+        "initial_countdown_seconds": 0,
+        "present_countdown_seconds": 0,
+        "query_passed": true,
+        "reset_test_performed": false,
+        "running": false,
+        "source": "BMC IPMI Get Watchdog Timer",
+        "use": "BIOS FRB2"
+      }
+    },
+    "network_link_check": {
+      "checked_at_utc": "2026-11-12T00:03:50.160537+00:00",
+      "eth0": {
+        "carrier": true,
+        "duplex": "full",
+        "mac": "00:a0:98:53:e6:43",
+        "speed_mbps": 100
+      },
+      "eth6": {
+        "admin_up": true,
+        "carrier": true,
+        "duplex": "full",
+        "faceplate_mapping_confirmed": false,
+        "likely_faceplate_port": "e1a",
+        "mac": "00:a0:98:54:5d:d2",
+        "operstate": "up",
+        "pci": "0000:03:00.0",
+        "speed_mbps": 10000
+      },
+      "eth7": {
+        "admin_up": true,
+        "carrier": true,
+        "duplex": "full",
+        "faceplate_mapping_confirmed": false,
+        "likely_faceplate_port": "e1b",
+        "mac": "00:a0:98:54:5d:d3",
+        "operstate": "up",
+        "pci": "0000:03:00.1",
+        "speed_mbps": 10000
+      },
+      "peer_address_confirmed": "192.168.1.150/24",
+      "peer_device": "927 SRX550",
+      "peer_interface": "ge-0/0/0.0",
+      "peer_iperf3_port_5201": "connection timed out",
+      "peer_ping_from_controller_received": 3,
+      "peer_ping_from_controller_sent": 3,
+      "peer_ping_from_laptop_passed": true,
+      "requested_peer": "192.168.1.150",
+      "switch_port_check": {
+        "both_administratively_disabled": false,
+        "both_up_up": true,
+        "device": "ex.927.i.927.technology",
+        "interfaces": [
+          "xe-0/2/0",
+          "xe-0/2/1"
+        ],
+        "json_ifdisable_flags": false,
+        "live_configuration_changed": true
+      }
+    },
+    "network_throughput_status": "accepted-by-user-assumption-not-measured",
+    "terraform_port_enablement": {
+      "applied": true,
+      "applied_at_utc": "2026-11-12T00:03:50.160522+00:00",
+      "capture_followup_passed": true,
+      "config_ports_enabled": [
+        "xe-0/2/0",
+        "xe-0/2/1"
+      ],
+      "managed_resources_to_add": 0,
+      "managed_resources_to_change": 2,
+      "managed_resources_to_destroy": 0,
+      "output_removals": [
+        "junos-jeremmfr-junos_chassis_inventory",
+        "junos-jeremmfr-junos_interfaces_physical_present"
+      ],
+      "output_updates": [
+        "junos-jeremmfr-junos_interface_logical",
+        "junos-jeremmfr-junos_interface_physical",
+        "junos-jeremmfr-junos_rstp_interface",
+        "variables"
+      ],
+      "provider_bastion_alias_corrected": true,
+      "status": "applied-and-links-verified",
+      "value_identical_output_type_normalization": "junos-jeremmfr-junos_security_zone"
+    },
+    "watchdog_class_present": false
+  },
+  "customer": "927",
+  "date": "2026-11-11",
+  "device": "FAS2240-2",
+  "disk_count_512_byte_sectors": 24,
+  "disk_format_test": {
+    "automatic_read_check": "Serial line was truncated; recovered and verified with commands shorter than 600 characters.",
+    "block_device": "sda",
+    "capacity_bytes": 600127266816,
+    "certification_requested": false,
+    "format_completed": true,
+    "format_start_exit": 0,
+    "logical_sector_bytes_after": 512,
+    "logical_sector_bytes_before": 520,
+    "read_begin_bytes": 67108864,
+    "read_checks_passed": true,
+    "read_end_bytes": 1048576,
+    "read_middle_bytes": 1048576,
+    "serial": "74H0A0AKFUZ6",
+    "status": "read-verified",
+    "target_sector_bytes": 512,
+    "verified_at_utc": "2026-11-11T19:07:36.127790+00:00",
+    "wwn": "50000395a81bb2c4"
+  },
+  "disk_formats_performed": 24,
+  "disk_formats_started": 24,
+  "disk_health_after_write_test": [
+    {
+      "device_at_start": "sg0",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        117
+      ],
+      "power_on_minutes": [
+        4961094
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74H0A0AKFUZ6",
+      "temperatures_c": [
+        30
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "50000395a81bb2c4"
+    },
+    {
+      "device_at_start": "sg1",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        108
+      ],
+      "power_on_minutes": [
+        4961104
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74I0A02PFUZ6",
+      "temperatures_c": [
+        31
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a8203c48"
+    },
+    {
+      "device_at_start": "sg2",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        106
+      ],
+      "power_on_minutes": [
+        4961154
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74H0A0I2FUZ6",
+      "temperatures_c": [
+        32
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a81bc530"
+    },
+    {
+      "device_at_start": "sg3",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        106
+      ],
+      "power_on_minutes": [
+        4961209
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74F0A06YFUZ6",
+      "temperatures_c": [
+        32
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a81a0c18"
+    },
+    {
+      "device_at_start": "sg4",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        101
+      ],
+      "power_on_minutes": [
+        4961288
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74H0A0R5FUZ6",
+      "temperatures_c": [
+        32
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a8201490"
+    },
+    {
+      "device_at_start": "sg5",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        105
+      ],
+      "power_on_minutes": [
+        4961110
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74I0A09GFUZ6",
+      "temperatures_c": [
+        32
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a8204a9c"
+    },
+    {
+      "device_at_start": "sg6",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        103
+      ],
+      "power_on_minutes": [
+        4961194
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74H0A0P0FUZ6",
+      "temperatures_c": [
+        32
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a81bf598"
+    },
+    {
+      "device_at_start": "sg7",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        112
+      ],
+      "power_on_minutes": [
+        4961199
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74H0A021FUZ6",
+      "temperatures_c": [
+        32
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a81b6a84"
+    },
+    {
+      "device_at_start": "sg8",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        112
+      ],
+      "power_on_minutes": [
+        4961213
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74H0A0IRFUZ6",
+      "temperatures_c": [
+        32
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a81bc648"
+    },
+    {
+      "device_at_start": "sg9",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        114
+      ],
+      "power_on_minutes": [
+        4961242
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74I0A02XFUZ6",
+      "temperatures_c": [
+        32
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a8203c9c"
+    },
+    {
+      "device_at_start": "sg10",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        104
+      ],
+      "power_on_minutes": [
+        4961218
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74F0A005FUZ6",
+      "temperatures_c": [
+        31
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a819eae4"
+    },
+    {
+      "device_at_start": "sg11",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        107
+      ],
+      "power_on_minutes": [
+        4961198
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74H0A0Q8FUZ6",
+      "temperatures_c": [
+        32
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a82007dc"
+    },
+    {
+      "device_at_start": "sg12",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        104
+      ],
+      "power_on_minutes": [
+        4961221
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74H0A0O8FUZ6",
+      "temperatures_c": [
+        32
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a81bea7c"
+    },
+    {
+      "device_at_start": "sg13",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        103
+      ],
+      "power_on_minutes": [
+        4961209
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74H0A0LRFUZ6",
+      "temperatures_c": [
+        31
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a81bdac0"
+    },
+    {
+      "device_at_start": "sg14",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        114
+      ],
+      "power_on_minutes": [
+        4961267
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74F0A04ZFUZ6",
+      "temperatures_c": [
+        31
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a81a03b0"
+    },
+    {
+      "device_at_start": "sg15",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        113
+      ],
+      "power_on_minutes": [
+        4961292
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74I0A07XFUZ6",
+      "temperatures_c": [
+        31
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a82044bc"
+    },
+    {
+      "device_at_start": "sg16",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        103
+      ],
+      "power_on_minutes": [
+        4961184
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74H0A0P7FUZ6",
+      "temperatures_c": [
+        30
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a81bf840"
+    },
+    {
+      "device_at_start": "sg17",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        107
+      ],
+      "power_on_minutes": [
+        4961189
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74D0A05IFUZ6",
+      "temperatures_c": [
+        30
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a8138f84"
+    },
+    {
+      "device_at_start": "sg18",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        109
+      ],
+      "power_on_minutes": [
+        4961127
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74I0A08QFUZ6",
+      "temperatures_c": [
+        30
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a820471c"
+    },
+    {
+      "device_at_start": "sg19",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        105
+      ],
+      "power_on_minutes": [
+        4961093
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74F0A1A2FUZ6",
+      "temperatures_c": [
+        30
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a81afbc8"
+    },
+    {
+      "device_at_start": "sg20",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        103
+      ],
+      "power_on_minutes": [
+        4961178
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74G0A016FUZ6",
+      "temperatures_c": [
+        30
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a81b167c"
+    },
+    {
+      "device_at_start": "sg21",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        104
+      ],
+      "power_on_minutes": [
+        4961196
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74H0A0R0FUZ6",
+      "temperatures_c": [
+        30
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a82013c4"
+    },
+    {
+      "device_at_start": "sg22",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        105
+      ],
+      "power_on_minutes": [
+        4961084
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74H0A0OIFUZ6",
+      "temperatures_c": [
+        29
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a81bf1e4"
+    },
+    {
+      "device_at_start": "sg23",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        103
+      ],
+      "power_on_minutes": [
+        4961165
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74F0A009FUZ6",
+      "temperatures_c": [
+        30
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a819eb2c"
+    }
+  ],
+  "disk_health_before_write_test": [
+    {
+      "device_at_start": "sg0",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        117
+      ],
+      "power_on_minutes": [
+        4960932
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74H0A0AKFUZ6",
+      "temperatures_c": [
+        29
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "50000395a81bb2c4"
+    },
+    {
+      "device_at_start": "sg1",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        108
+      ],
+      "power_on_minutes": [
+        4960943
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74I0A02PFUZ6",
+      "temperatures_c": [
+        30
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a8203c48"
+    },
+    {
+      "device_at_start": "sg2",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        106
+      ],
+      "power_on_minutes": [
+        4960993
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74H0A0I2FUZ6",
+      "temperatures_c": [
+        31
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a81bc530"
+    },
+    {
+      "device_at_start": "sg3",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        106
+      ],
+      "power_on_minutes": [
+        4961048
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74F0A06YFUZ6",
+      "temperatures_c": [
+        31
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a81a0c18"
+    },
+    {
+      "device_at_start": "sg4",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        101
+      ],
+      "power_on_minutes": [
+        4961126
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74H0A0R5FUZ6",
+      "temperatures_c": [
+        32
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a8201490"
+    },
+    {
+      "device_at_start": "sg5",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        105
+      ],
+      "power_on_minutes": [
+        4960948
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74I0A09GFUZ6",
+      "temperatures_c": [
+        30
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a8204a9c"
+    },
+    {
+      "device_at_start": "sg6",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        103
+      ],
+      "power_on_minutes": [
+        4961032
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74H0A0P0FUZ6",
+      "temperatures_c": [
+        31
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a81bf598"
+    },
+    {
+      "device_at_start": "sg7",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        112
+      ],
+      "power_on_minutes": [
+        4961037
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74H0A021FUZ6",
+      "temperatures_c": [
+        31
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a81b6a84"
+    },
+    {
+      "device_at_start": "sg8",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        112
+      ],
+      "power_on_minutes": [
+        4961051
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74H0A0IRFUZ6",
+      "temperatures_c": [
+        31
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a81bc648"
+    },
+    {
+      "device_at_start": "sg9",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        114
+      ],
+      "power_on_minutes": [
+        4961080
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74I0A02XFUZ6",
+      "temperatures_c": [
+        31
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a8203c9c"
+    },
+    {
+      "device_at_start": "sg10",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        104
+      ],
+      "power_on_minutes": [
+        4961056
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74F0A005FUZ6",
+      "temperatures_c": [
+        30
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a819eae4"
+    },
+    {
+      "device_at_start": "sg11",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        107
+      ],
+      "power_on_minutes": [
+        4961036
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74H0A0Q8FUZ6",
+      "temperatures_c": [
+        31
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a82007dc"
+    },
+    {
+      "device_at_start": "sg12",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        104
+      ],
+      "power_on_minutes": [
+        4961060
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74H0A0O8FUZ6",
+      "temperatures_c": [
+        31
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a81bea7c"
+    },
+    {
+      "device_at_start": "sg13",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        103
+      ],
+      "power_on_minutes": [
+        4961047
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74H0A0LRFUZ6",
+      "temperatures_c": [
+        30
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a81bdac0"
+    },
+    {
+      "device_at_start": "sg14",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        114
+      ],
+      "power_on_minutes": [
+        4961105
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74F0A04ZFUZ6",
+      "temperatures_c": [
+        30
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a81a03b0"
+    },
+    {
+      "device_at_start": "sg15",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        113
+      ],
+      "power_on_minutes": [
+        4961131
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74I0A07XFUZ6",
+      "temperatures_c": [
+        30
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a82044bc"
+    },
+    {
+      "device_at_start": "sg16",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        103
+      ],
+      "power_on_minutes": [
+        4961023
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74H0A0P7FUZ6",
+      "temperatures_c": [
+        29
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a81bf840"
+    },
+    {
+      "device_at_start": "sg17",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        107
+      ],
+      "power_on_minutes": [
+        4961028
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74D0A05IFUZ6",
+      "temperatures_c": [
+        29
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a8138f84"
+    },
+    {
+      "device_at_start": "sg18",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        109
+      ],
+      "power_on_minutes": [
+        4960966
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74I0A08QFUZ6",
+      "temperatures_c": [
+        29
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a820471c"
+    },
+    {
+      "device_at_start": "sg19",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        105
+      ],
+      "power_on_minutes": [
+        4960932
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74F0A1A2FUZ6",
+      "temperatures_c": [
+        29
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a81afbc8"
+    },
+    {
+      "device_at_start": "sg20",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        103
+      ],
+      "power_on_minutes": [
+        4961017
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74G0A016FUZ6",
+      "temperatures_c": [
+        29
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a81b167c"
+    },
+    {
+      "device_at_start": "sg21",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        104
+      ],
+      "power_on_minutes": [
+        4961035
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74H0A0R0FUZ6",
+      "temperatures_c": [
+        29
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a82013c4"
+    },
+    {
+      "device_at_start": "sg22",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        105
+      ],
+      "power_on_minutes": [
+        4960923
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74H0A0OIFUZ6",
+      "temperatures_c": [
+        29
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a81bf1e4"
+    },
+    {
+      "device_at_start": "sg23",
+      "informational_exception_asc": [
+        0
+      ],
+      "non_medium_errors": [
+        103
+      ],
+      "power_on_minutes": [
+        4961004
+      ],
+      "read_uncorrected_errors": 0,
+      "serial": "74F0A009FUZ6",
+      "temperatures_c": [
+        29
+      ],
+      "verify_uncorrected_errors": 0,
+      "write_uncorrected_errors": 0,
+      "wwn": "0x50000395a819eb2c"
+    }
+  ],
+  "disk_io_test": {
+    "devices": [
+      {
+        "device_at_start": "sg0",
+        "full_read_passed": true,
+        "full_read_percent": 100.0,
+        "sampled_write_read_passed": true,
+        "serial": "74H0A0AKFUZ6",
+        "status": "io-verified:sda",
+        "wwn": "0x50000395a81bb2c4"
+      },
+      {
+        "device_at_start": "sg1",
+        "full_read_passed": true,
+        "full_read_percent": 100.0,
+        "sampled_write_read_passed": true,
+        "serial": "74I0A02PFUZ6",
+        "status": "io-verified:sdb",
+        "wwn": "0x50000395a8203c48"
+      },
+      {
+        "device_at_start": "sg10",
+        "full_read_passed": true,
+        "full_read_percent": 100.0,
+        "sampled_write_read_passed": true,
+        "serial": "74F0A005FUZ6",
+        "status": "io-verified:sdj",
+        "wwn": "0x50000395a819eae4"
+      },
+      {
+        "device_at_start": "sg11",
+        "full_read_passed": true,
+        "full_read_percent": 100.0,
+        "sampled_write_read_passed": true,
+        "serial": "74H0A0Q8FUZ6",
+        "status": "io-verified:sdk",
+        "wwn": "0x50000395a82007dc"
+      },
+      {
+        "device_at_start": "sg12",
+        "full_read_passed": true,
+        "full_read_percent": 100.0,
+        "sampled_write_read_passed": true,
+        "serial": "74H0A0O8FUZ6",
+        "status": "io-verified:sdl",
+        "wwn": "0x50000395a81bea7c"
+      },
+      {
+        "device_at_start": "sg13",
+        "full_read_passed": true,
+        "full_read_percent": 100.0,
+        "sampled_write_read_passed": true,
+        "serial": "74H0A0LRFUZ6",
+        "status": "io-verified:sdm",
+        "wwn": "0x50000395a81bdac0"
+      },
+      {
+        "device_at_start": "sg14",
+        "full_read_passed": true,
+        "full_read_percent": 100.0,
+        "sampled_write_read_passed": true,
+        "serial": "74F0A04ZFUZ6",
+        "status": "io-verified:sdo",
+        "wwn": "0x50000395a81a03b0"
+      },
+      {
+        "device_at_start": "sg15",
+        "full_read_passed": true,
+        "full_read_percent": 100.0,
+        "sampled_write_read_passed": true,
+        "serial": "74I0A07XFUZ6",
+        "status": "io-verified:sdp",
+        "wwn": "0x50000395a82044bc"
+      },
+      {
+        "device_at_start": "sg16",
+        "full_read_passed": true,
+        "full_read_percent": 100.0,
+        "sampled_write_read_passed": true,
+        "serial": "74H0A0P7FUZ6",
+        "status": "io-verified:sdq",
+        "wwn": "0x50000395a81bf840"
+      },
+      {
+        "device_at_start": "sg17",
+        "full_read_passed": true,
+        "full_read_percent": 100.0,
+        "sampled_write_read_passed": true,
+        "serial": "74D0A05IFUZ6",
+        "status": "io-verified:sdr",
+        "wwn": "0x50000395a8138f84"
+      },
+      {
+        "device_at_start": "sg18",
+        "full_read_passed": true,
+        "full_read_percent": 100.0,
+        "sampled_write_read_passed": true,
+        "serial": "74I0A08QFUZ6",
+        "status": "io-verified:sds",
+        "wwn": "0x50000395a820471c"
+      },
+      {
+        "device_at_start": "sg19",
+        "full_read_passed": true,
+        "full_read_percent": 100.0,
+        "sampled_write_read_passed": true,
+        "serial": "74F0A1A2FUZ6",
+        "status": "io-verified:sdt",
+        "wwn": "0x50000395a81afbc8"
+      },
+      {
+        "device_at_start": "sg2",
+        "full_read_passed": true,
+        "full_read_percent": 100.0,
+        "sampled_write_read_passed": true,
+        "serial": "74H0A0I2FUZ6",
+        "status": "io-verified:sdc",
+        "wwn": "0x50000395a81bc530"
+      },
+      {
+        "device_at_start": "sg20",
+        "full_read_passed": true,
+        "full_read_percent": 100.0,
+        "sampled_write_read_passed": true,
+        "serial": "74G0A016FUZ6",
+        "status": "io-verified:sdu",
+        "wwn": "0x50000395a81b167c"
+      },
+      {
+        "device_at_start": "sg21",
+        "full_read_passed": true,
+        "full_read_percent": 100.0,
+        "sampled_write_read_passed": true,
+        "serial": "74H0A0R0FUZ6",
+        "status": "io-verified:sdv",
+        "wwn": "0x50000395a82013c4"
+      },
+      {
+        "device_at_start": "sg22",
+        "full_read_passed": true,
+        "full_read_percent": 100.0,
+        "sampled_write_read_passed": true,
+        "serial": "74H0A0OIFUZ6",
+        "status": "io-verified:sdw",
+        "wwn": "0x50000395a81bf1e4"
+      },
+      {
+        "device_at_start": "sg23",
+        "full_read_passed": true,
+        "full_read_percent": 100.0,
+        "sampled_write_read_passed": true,
+        "serial": "74F0A009FUZ6",
+        "status": "io-verified:sdx",
+        "wwn": "0x50000395a819eb2c"
+      },
+      {
+        "device_at_start": "sg3",
+        "full_read_passed": true,
+        "full_read_percent": 100.0,
+        "sampled_write_read_passed": true,
+        "serial": "74F0A06YFUZ6",
+        "status": "io-verified:sdn",
+        "wwn": "0x50000395a81a0c18"
+      },
+      {
+        "device_at_start": "sg4",
+        "full_read_passed": true,
+        "full_read_percent": 100.0,
+        "sampled_write_read_passed": true,
+        "serial": "74H0A0R5FUZ6",
+        "status": "io-verified:sdd",
+        "wwn": "0x50000395a8201490"
+      },
+      {
+        "device_at_start": "sg5",
+        "full_read_passed": true,
+        "full_read_percent": 100.0,
+        "sampled_write_read_passed": true,
+        "serial": "74I0A09GFUZ6",
+        "status": "io-verified:sde",
+        "wwn": "0x50000395a8204a9c"
+      },
+      {
+        "device_at_start": "sg6",
+        "full_read_passed": true,
+        "full_read_percent": 100.0,
+        "sampled_write_read_passed": true,
+        "serial": "74H0A0P0FUZ6",
+        "status": "io-verified:sdf",
+        "wwn": "0x50000395a81bf598"
+      },
+      {
+        "device_at_start": "sg7",
+        "full_read_passed": true,
+        "full_read_percent": 100.0,
+        "sampled_write_read_passed": true,
+        "serial": "74H0A021FUZ6",
+        "status": "io-verified:sdg",
+        "wwn": "0x50000395a81b6a84"
+      },
+      {
+        "device_at_start": "sg8",
+        "full_read_passed": true,
+        "full_read_percent": 100.0,
+        "sampled_write_read_passed": true,
+        "serial": "74H0A0IRFUZ6",
+        "status": "io-verified:sdh",
+        "wwn": "0x50000395a81bc648"
+      },
+      {
+        "device_at_start": "sg9",
+        "full_read_passed": true,
+        "full_read_percent": 100.0,
+        "sampled_write_read_passed": true,
+        "serial": "74I0A02XFUZ6",
+        "status": "io-verified:sdi",
+        "wwn": "0x50000395a8203c9c"
+      }
+    ],
+    "failed_count": 0,
+    "full_read_enabled": true,
+    "health_deltas": [
+      {
+        "informational_exception_asc": [
+          0
+        ],
+        "read_uncorrected_errors_delta": 0,
+        "serial": "74H0A0AKFUZ6",
+        "verify_uncorrected_errors_delta": 0,
+        "write_uncorrected_errors_delta": 0
+      },
+      {
+        "informational_exception_asc": [
+          0
+        ],
+        "read_uncorrected_errors_delta": 0,
+        "serial": "74I0A02PFUZ6",
+        "verify_uncorrected_errors_delta": 0,
+        "write_uncorrected_errors_delta": 0
+      },
+      {
+        "informational_exception_asc": [
+          0
+        ],
+        "read_uncorrected_errors_delta": 0,
+        "serial": "74H0A0I2FUZ6",
+        "verify_uncorrected_errors_delta": 0,
+        "write_uncorrected_errors_delta": 0
+      },
+      {
+        "informational_exception_asc": [
+          0
+        ],
+        "read_uncorrected_errors_delta": 0,
+        "serial": "74F0A06YFUZ6",
+        "verify_uncorrected_errors_delta": 0,
+        "write_uncorrected_errors_delta": 0
+      },
+      {
+        "informational_exception_asc": [
+          0
+        ],
+        "read_uncorrected_errors_delta": 0,
+        "serial": "74H0A0R5FUZ6",
+        "verify_uncorrected_errors_delta": 0,
+        "write_uncorrected_errors_delta": 0
+      },
+      {
+        "informational_exception_asc": [
+          0
+        ],
+        "read_uncorrected_errors_delta": 0,
+        "serial": "74I0A09GFUZ6",
+        "verify_uncorrected_errors_delta": 0,
+        "write_uncorrected_errors_delta": 0
+      },
+      {
+        "informational_exception_asc": [
+          0
+        ],
+        "read_uncorrected_errors_delta": 0,
+        "serial": "74H0A0P0FUZ6",
+        "verify_uncorrected_errors_delta": 0,
+        "write_uncorrected_errors_delta": 0
+      },
+      {
+        "informational_exception_asc": [
+          0
+        ],
+        "read_uncorrected_errors_delta": 0,
+        "serial": "74H0A021FUZ6",
+        "verify_uncorrected_errors_delta": 0,
+        "write_uncorrected_errors_delta": 0
+      },
+      {
+        "informational_exception_asc": [
+          0
+        ],
+        "read_uncorrected_errors_delta": 0,
+        "serial": "74H0A0IRFUZ6",
+        "verify_uncorrected_errors_delta": 0,
+        "write_uncorrected_errors_delta": 0
+      },
+      {
+        "informational_exception_asc": [
+          0
+        ],
+        "read_uncorrected_errors_delta": 0,
+        "serial": "74I0A02XFUZ6",
+        "verify_uncorrected_errors_delta": 0,
+        "write_uncorrected_errors_delta": 0
+      },
+      {
+        "informational_exception_asc": [
+          0
+        ],
+        "read_uncorrected_errors_delta": 0,
+        "serial": "74F0A005FUZ6",
+        "verify_uncorrected_errors_delta": 0,
+        "write_uncorrected_errors_delta": 0
+      },
+      {
+        "informational_exception_asc": [
+          0
+        ],
+        "read_uncorrected_errors_delta": 0,
+        "serial": "74H0A0Q8FUZ6",
+        "verify_uncorrected_errors_delta": 0,
+        "write_uncorrected_errors_delta": 0
+      },
+      {
+        "informational_exception_asc": [
+          0
+        ],
+        "read_uncorrected_errors_delta": 0,
+        "serial": "74H0A0O8FUZ6",
+        "verify_uncorrected_errors_delta": 0,
+        "write_uncorrected_errors_delta": 0
+      },
+      {
+        "informational_exception_asc": [
+          0
+        ],
+        "read_uncorrected_errors_delta": 0,
+        "serial": "74H0A0LRFUZ6",
+        "verify_uncorrected_errors_delta": 0,
+        "write_uncorrected_errors_delta": 0
+      },
+      {
+        "informational_exception_asc": [
+          0
+        ],
+        "read_uncorrected_errors_delta": 0,
+        "serial": "74F0A04ZFUZ6",
+        "verify_uncorrected_errors_delta": 0,
+        "write_uncorrected_errors_delta": 0
+      },
+      {
+        "informational_exception_asc": [
+          0
+        ],
+        "read_uncorrected_errors_delta": 0,
+        "serial": "74I0A07XFUZ6",
+        "verify_uncorrected_errors_delta": 0,
+        "write_uncorrected_errors_delta": 0
+      },
+      {
+        "informational_exception_asc": [
+          0
+        ],
+        "read_uncorrected_errors_delta": 0,
+        "serial": "74H0A0P7FUZ6",
+        "verify_uncorrected_errors_delta": 0,
+        "write_uncorrected_errors_delta": 0
+      },
+      {
+        "informational_exception_asc": [
+          0
+        ],
+        "read_uncorrected_errors_delta": 0,
+        "serial": "74D0A05IFUZ6",
+        "verify_uncorrected_errors_delta": 0,
+        "write_uncorrected_errors_delta": 0
+      },
+      {
+        "informational_exception_asc": [
+          0
+        ],
+        "read_uncorrected_errors_delta": 0,
+        "serial": "74I0A08QFUZ6",
+        "verify_uncorrected_errors_delta": 0,
+        "write_uncorrected_errors_delta": 0
+      },
+      {
+        "informational_exception_asc": [
+          0
+        ],
+        "read_uncorrected_errors_delta": 0,
+        "serial": "74F0A1A2FUZ6",
+        "verify_uncorrected_errors_delta": 0,
+        "write_uncorrected_errors_delta": 0
+      },
+      {
+        "informational_exception_asc": [
+          0
+        ],
+        "read_uncorrected_errors_delta": 0,
+        "serial": "74G0A016FUZ6",
+        "verify_uncorrected_errors_delta": 0,
+        "write_uncorrected_errors_delta": 0
+      },
+      {
+        "informational_exception_asc": [
+          0
+        ],
+        "read_uncorrected_errors_delta": 0,
+        "serial": "74H0A0R0FUZ6",
+        "verify_uncorrected_errors_delta": 0,
+        "write_uncorrected_errors_delta": 0
+      },
+      {
+        "informational_exception_asc": [
+          0
+        ],
+        "read_uncorrected_errors_delta": 0,
+        "serial": "74H0A0OIFUZ6",
+        "verify_uncorrected_errors_delta": 0,
+        "write_uncorrected_errors_delta": 0
+      },
+      {
+        "informational_exception_asc": [
+          0
+        ],
+        "read_uncorrected_errors_delta": 0,
+        "serial": "74F0A009FUZ6",
+        "verify_uncorrected_errors_delta": 0,
+        "write_uncorrected_errors_delta": 0
+      }
+    ],
+    "passed_count": 24,
+    "prepared_at_utc": "2026-11-11T20:31:34.993212+00:00",
+    "regions_per_disk": 3,
+    "sample_region_bytes": 8388608,
+    "sampled_write_read_passed_count": 24,
+    "status": "passed",
+    "target_count": 24,
+    "test_artifact_sha256": {
+      "io-batch.sh": "9c059dd282edfe7208fc336770c2e278a99b5526d6437607e0777661cf1690b7",
+      "io-status.sh": "fcc0b041799e86d6302c112f1d02e585da10354b5c6a5464a53f6969af137cb1",
+      "io-targets.tsv": "a88ccfc671282b6569ab2761d87017fe26cdfecea82515e509887cc0741d4d9f",
+      "io-worker.sh": "2ec81c60eee7904819e1738d16d0314227931f00ef60212f5e5f5688ace948a9",
+      "rw-verify": "7a5541938d670d098579b97d2fd372a6b31f3102457e5112c3e073f2c4f68744"
+    },
+    "updated_at_utc": "2026-11-11T23:07:11.771516+00:00"
+  },
+  "disk_logical_sector_bytes": {
+    "512": 24,
+    "520": 0,
+    "formatting": 0,
+    "requires_inspection": 0
+  },
+  "disk_mounts": 0,
+  "disk_swap_devices": 0,
+  "eusb_boot_preparation": {
+    "automatic_boot_test": "controller-only-cold-start",
+    "automatic_eusb_boot_verified": true,
+    "backup": {
+      "actual_bytes": 2030043136,
+      "destination": "/tmp/tf_lab/netapp-eusb-backup/",
+      "expected_bytes": 2030043136,
+      "sha256": "eaee9f1367f3031d031feb787b59e958ecdbd2dc2fdec43ee1236ab05f6681aa",
+      "source_copy_exit_code": 0,
+      "status": "complete",
+      "verified": true
+    },
+    "boot_file_installed": true,
+    "boot_image_sha256": "0d629177c5e57030c316210e0c7b91e500c0c3650455db3eda4cb4d65b04032b",
+    "checksum_bypass_required_for_primary": false,
+    "checksum_enabled_wrapper_sha256": "ef3d5994e7ce0ac1f9df3812086f6dd31edf29d690bf8703df13e501cebede6f",
+    "console_interruption_required": false,
+    "existing_boot_files_preserved": true,
+    "filesystem": "FAT16",
+    "filesystem_free_kib": 1179264,
+    "filesystem_inspection": {
+      "allocation_entries_match": true,
+      "fat_copies_differ_only_in_clean_shutdown_flag": true,
+      "offline_boot_file_roundtrip_sha256_verified": true,
+      "offline_staging_filesystem_check_clean": true
+    },
+    "filesystem_readonly_mount_verified": true,
+    "filesystem_unmounted_after_inspection": true,
+    "installed_file": {
+      "bytes": 14798696,
+      "path": "/LINUX.ELF",
+      "sha256_verified_after_remount": true
+    },
+    "manual_eusb_boot_verified": true,
+    "network_boot_required": false,
+    "normal_boot_command_verified": true,
+    "original_primary_kernel_preserved_as": "/x86_64/freebsd/image1/kernel.ontap",
+    "original_primary_kernel_sha256": "b51eeb37a1e20ef30a40c489441bf17f0cbf6b10ed975fd6bfe225a45994d053",
+    "persistent_loader_settings_changed": false,
+    "post_cold_boot_checks": {
+      "core_temperatures_c": [
+        40,
+        37
+      ],
+      "cpu_online": "0-3",
+      "data_links_mbps": [
+        10000,
+        10000
+      ],
+      "ipmi_device_present": true,
+      "laptop_ping_received": 2,
+      "laptop_ping_sent": 2,
+      "management_address": "192.168.1.154/24",
+      "management_link_mbps": 100,
+      "sas_disks_visible": 24,
+      "storage_filesystems_mounted": false,
+      "temporary_http_server_stopped": true
+    },
+    "primary_boot_file_installed": true,
+    "primary_boot_path": "/x86_64/freebsd/image1/kernel",
+    "primary_url_environment_readonly": true,
+    "serial": "B8F0022700200059",
+    "usb_link_mbps": 12,
+    "warm_reboot_test": {
+      "resolved": false,
+      "result": "stalled-before-bios-or-loader-output",
+      "timeout_seconds": 180
+    }
+  },
+  "final_disk_verification_at_utc": "2026-11-11T20:21:08.882978+00:00",
+  "http_probe_exit": 0,
+  "image_sha256": "0d629177c5e57030c316210e0c7b91e500c0c3650455db3eda4cb4d65b04032b",
+  "kernel": "6.12.107+deb13-amd64",
+  "laptop_ping_received": 2,
+  "laptop_ping_sent": 2,
+  "linux_block_device_use_blocked": false,
+  "management_address": "192.168.1.154/24",
+  "management_driver": "e1000e",
+  "management_link_mbps": 100,
+  "os_selection": "deferred-until-after-hardware-testing",
+  "parallel_disk_format": {
+    "active_count": 0,
+    "certification_requested": false,
+    "devices": [
+      {
+        "block_device": "sdb",
+        "capacity_bytes": 600127266816,
+        "device_at_start": "sg1",
+        "logical_sector_bytes": 512,
+        "read_checks_passed": true,
+        "serial": "74I0A02PFUZ6",
+        "status": "read-verified:sdb:600127266816:512",
+        "wwn": "0x50000395a8203c48"
+      },
+      {
+        "block_device": "sdj",
+        "capacity_bytes": 600127266816,
+        "device_at_start": "sg10",
+        "logical_sector_bytes": 512,
+        "read_checks_passed": true,
+        "serial": "74F0A005FUZ6",
+        "status": "read-verified:sdj:600127266816:512",
+        "wwn": "0x50000395a819eae4"
+      },
+      {
+        "block_device": "sdk",
+        "capacity_bytes": 600127266816,
+        "device_at_start": "sg11",
+        "logical_sector_bytes": 512,
+        "read_checks_passed": true,
+        "serial": "74H0A0Q8FUZ6",
+        "status": "read-verified:sdk:600127266816:512",
+        "wwn": "0x50000395a82007dc"
+      },
+      {
+        "block_device": "sdl",
+        "capacity_bytes": 600127266816,
+        "device_at_start": "sg12",
+        "logical_sector_bytes": 512,
+        "read_checks_passed": true,
+        "serial": "74H0A0O8FUZ6",
+        "status": "read-verified:sdl:600127266816:512",
+        "wwn": "0x50000395a81bea7c"
+      },
+      {
+        "block_device": "sdm",
+        "capacity_bytes": 600127266816,
+        "device_at_start": "sg13",
+        "logical_sector_bytes": 512,
+        "read_checks_passed": true,
+        "serial": "74H0A0LRFUZ6",
+        "status": "read-verified:sdm:600127266816:512",
+        "wwn": "0x50000395a81bdac0"
+      },
+      {
+        "block_device": "sdo",
+        "capacity_bytes": 600127266816,
+        "device_at_start": "sg14",
+        "logical_sector_bytes": 512,
+        "read_checks_passed": true,
+        "serial": "74F0A04ZFUZ6",
+        "status": "read-verified:sdo:600127266816:512",
+        "wwn": "0x50000395a81a03b0"
+      },
+      {
+        "block_device": "sdp",
+        "capacity_bytes": 600127266816,
+        "device_at_start": "sg15",
+        "logical_sector_bytes": 512,
+        "read_checks_passed": true,
+        "serial": "74I0A07XFUZ6",
+        "status": "read-verified:sdp:600127266816:512",
+        "wwn": "0x50000395a82044bc"
+      },
+      {
+        "block_device": "sdq",
+        "capacity_bytes": 600127266816,
+        "device_at_start": "sg16",
+        "logical_sector_bytes": 512,
+        "read_checks_passed": true,
+        "serial": "74H0A0P7FUZ6",
+        "status": "read-verified:sdq:600127266816:512",
+        "wwn": "0x50000395a81bf840"
+      },
+      {
+        "block_device": "sdr",
+        "capacity_bytes": 600127266816,
+        "device_at_start": "sg17",
+        "logical_sector_bytes": 512,
+        "read_checks_passed": true,
+        "serial": "74D0A05IFUZ6",
+        "status": "read-verified:sdr:600127266816:512",
+        "wwn": "0x50000395a8138f84"
+      },
+      {
+        "block_device": "sds",
+        "capacity_bytes": 600127266816,
+        "device_at_start": "sg18",
+        "logical_sector_bytes": 512,
+        "read_checks_passed": true,
+        "serial": "74I0A08QFUZ6",
+        "status": "read-verified:sds:600127266816:512",
+        "wwn": "0x50000395a820471c"
+      },
+      {
+        "block_device": "sdt",
+        "capacity_bytes": 600127266816,
+        "device_at_start": "sg19",
+        "logical_sector_bytes": 512,
+        "read_checks_passed": true,
+        "serial": "74F0A1A2FUZ6",
+        "status": "read-verified:sdt:600127266816:512",
+        "wwn": "0x50000395a81afbc8"
+      },
+      {
+        "block_device": "sdc",
+        "capacity_bytes": 600127266816,
+        "device_at_start": "sg2",
+        "logical_sector_bytes": 512,
+        "read_checks_passed": true,
+        "serial": "74H0A0I2FUZ6",
+        "status": "read-verified:sdc:600127266816:512",
+        "wwn": "0x50000395a81bc530"
+      },
+      {
+        "block_device": "sdu",
+        "capacity_bytes": 600127266816,
+        "device_at_start": "sg20",
+        "logical_sector_bytes": 512,
+        "read_checks_passed": true,
+        "serial": "74G0A016FUZ6",
+        "status": "read-verified:sdu:600127266816:512",
+        "wwn": "0x50000395a81b167c"
+      },
+      {
+        "block_device": "sdv",
+        "capacity_bytes": 600127266816,
+        "device_at_start": "sg21",
+        "logical_sector_bytes": 512,
+        "read_checks_passed": true,
+        "serial": "74H0A0R0FUZ6",
+        "status": "read-verified:sdv:600127266816:512",
+        "wwn": "0x50000395a82013c4"
+      },
+      {
+        "block_device": "sdw",
+        "capacity_bytes": 600127266816,
+        "device_at_start": "sg22",
+        "logical_sector_bytes": 512,
+        "read_checks_passed": true,
+        "serial": "74H0A0OIFUZ6",
+        "status": "read-verified:sdw:600127266816:512",
+        "wwn": "0x50000395a81bf1e4"
+      },
+      {
+        "block_device": "sdx",
+        "capacity_bytes": 600127266816,
+        "device_at_start": "sg23",
+        "logical_sector_bytes": 512,
+        "read_checks_passed": true,
+        "serial": "74F0A009FUZ6",
+        "status": "read-verified:sdx:600127266816:512",
+        "wwn": "0x50000395a819eb2c"
+      },
+      {
+        "block_device": "sdn",
+        "capacity_bytes": 600127266816,
+        "device_at_start": "sg3",
+        "logical_sector_bytes": 512,
+        "read_checks_passed": true,
+        "serial": "74F0A06YFUZ6",
+        "status": "read-verified:sdn:600127266816:512",
+        "wwn": "0x50000395a81a0c18"
+      },
+      {
+        "block_device": "sdd",
+        "capacity_bytes": 600127266816,
+        "device_at_start": "sg4",
+        "logical_sector_bytes": 512,
+        "read_checks_passed": true,
+        "serial": "74H0A0R5FUZ6",
+        "status": "read-verified:sdd:600127266816:512",
+        "wwn": "0x50000395a8201490"
+      },
+      {
+        "block_device": "sde",
+        "capacity_bytes": 600127266816,
+        "device_at_start": "sg5",
+        "logical_sector_bytes": 512,
+        "read_checks_passed": true,
+        "serial": "74I0A09GFUZ6",
+        "status": "read-verified:sde:600127266816:512",
+        "wwn": "0x50000395a8204a9c"
+      },
+      {
+        "block_device": "sdf",
+        "capacity_bytes": 600127266816,
+        "device_at_start": "sg6",
+        "logical_sector_bytes": 512,
+        "read_checks_passed": true,
+        "serial": "74H0A0P0FUZ6",
+        "status": "read-verified:sdf:600127266816:512",
+        "wwn": "0x50000395a81bf598"
+      },
+      {
+        "block_device": "sdg",
+        "capacity_bytes": 600127266816,
+        "device_at_start": "sg7",
+        "logical_sector_bytes": 512,
+        "read_checks_passed": true,
+        "serial": "74H0A021FUZ6",
+        "status": "read-verified:sdg:600127266816:512",
+        "wwn": "0x50000395a81b6a84"
+      },
+      {
+        "block_device": "sdh",
+        "capacity_bytes": 600127266816,
+        "device_at_start": "sg8",
+        "logical_sector_bytes": 512,
+        "read_checks_passed": true,
+        "serial": "74H0A0IRFUZ6",
+        "status": "read-verified:sdh:600127266816:512",
+        "wwn": "0x50000395a81bc648"
+      },
+      {
+        "block_device": "sdi",
+        "capacity_bytes": 600127266816,
+        "device_at_start": "sg9",
+        "logical_sector_bytes": 512,
+        "read_checks_passed": true,
+        "serial": "74I0A02XFUZ6",
+        "status": "read-verified:sdi:600127266816:512",
+        "wwn": "0x50000395a8203c9c"
+      }
+    ],
+    "failed_count": 0,
+    "read_verified_count": 23,
+    "status": "completed",
+    "target_count": 23,
+    "target_sector_bytes": 512,
+    "updated_at_utc": "2026-11-11T20:18:35.937135+00:00"
+  },
+  "persistent_installation": true,
+  "persistent_os_installation": {
+    "client_access": "undecided; shares and targets disabled",
+    "clock_synchronized": true,
+    "config": "config/927/na/v.config.json",
+    "data_allocation": "none requested",
+    "data_array": {
+      "active_members": 22,
+      "array": "/dev/md1",
+      "array_uuid": "fc1f8d3d:cb9f1f61:625830d0:458262df",
+      "failed_members": 0,
+      "level": "raid6",
+      "synchronization": "in progress; not yet verified complete"
+    },
+    "data_disks_modified": true,
+    "data_layout": "22-disk RAID6",
+    "failed_systemd_services_after_fixes": 0,
+    "http_transfer_server_stopped": true,
+    "manual_persistent_boot_verified": true,
+    "network_boot_required": false,
+    "online_cpu_threads": 4,
+    "persistence_marker_survived_cold_boot": true,
+    "persistent_elf_sha256": "bcf985043c69d2581a454695910584819502243acd99db2cd74c3bb4f5efc8ed",
+    "requested_protocols": [
+      "smb",
+      "nfs",
+      "iscsi"
+    ],
+    "root_array": {
+      "array": "/dev/md0",
+      "array_name": "na-root",
+      "array_uuid": "91c5476d:8fdd49c1:9c1de72d:5b21cf1b",
+      "filesystem": "ext4",
+      "filesystem_uuid": "4df04fcf-8c83-41b1-8596-af06b1587b71",
+      "partition_sectors": 134217728,
+      "partition_start_sector": 2048
+    },
+    "root_mirror_synchronized": true,
+    "ssh_key_authentication_verified": true,
+    "status": "installed; RAID6 initial synchronization in progress",
+    "storage_bond": {
+      "interface": "bond0",
+      "lacp_rate": "fast",
+      "members": [
+        {
+          "interface": "e1a",
+          "mac": "00:a0:98:54:5d:d2"
+        },
+        {
+          "interface": "e1b",
+          "mac": "00:a0:98:54:5d:d3"
+        }
+      ],
+      "mode": "802.3ad",
+      "transmit_hash_policy": "layer3+4"
+    },
+    "storage_gateway_ping": {
+      "received": 3,
+      "sent": 3,
+      "target": "10.1.252.1"
+    },
+    "storage_network": {
+      "address": "10.1.252.10/24",
+      "gateway": "10.1.252.1",
+      "interface": "storage197",
+      "vlan_id": 197
+    },
+    "swap_bytes": 2147483648,
+    "switch_apply": {
+      "final_plan": "clean, refresh=false against freshly written state",
+      "initial": "partial: RSTP committed before aggregate Ethernet switching existed",
+      "live_lacp": "both 10 GbE links collecting/distributing",
+      "retry": "success: missing RSTP entry only"
+    },
+    "switch_changes_applied": true,
+    "system_disks": [
+      {
+        "capacity_bytes": 600127266816,
+        "serial": "74H0A0AKFUZ6",
+        "wwn": "50000395a81bb2c4"
+      },
+      {
+        "capacity_bytes": 600127266816,
+        "serial": "74I0A02PFUZ6",
+        "wwn": "50000395a8203c48"
+      }
+    ],
+    "unattended_persistent_cold_boot_verified": true,
+    "volume_group": {
+      "free_bytes": 11999819857920,
+      "logical_volume_count": 0,
+      "name": "nas",
+      "size_bytes": 11999819857920
+    }
+  },
+  "ram_shell_verified": true,
+  "sas_driver": "pm80xx",
+  "sas_driver_initialized": true,
+  "scsi_disk_count": 24,
+  "total_raw_capacity_bytes": 14403054403584,
+  "usable_memory_kb": 4007152
+}

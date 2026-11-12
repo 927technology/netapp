@@ -1,0 +1,15 @@
+{
+  "capacity_bytes_per_disk": 600127266816,
+  "disk_count": 24,
+  "full_read_scan": true,
+  "mode": "sampled-destructive-write-read-then-full-read",
+  "os_selection": "deferred-until-after-hardware-testing",
+  "preserve_original_boot_media": true,
+  "sample_region_bytes": 8388608,
+  "sample_regions": [
+    "beginning",
+    "middle",
+    "end"
+  ],
+  "sector_bytes": 512
+}

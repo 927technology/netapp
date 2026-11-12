@@ -1,0 +1,49 @@
+#!/bin/busybox sh
+/bin/busybox --install -s /bin
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+mount -t devtmpfs devtmpfs /dev
+mount -t tmpfs tmpfs /run
+mount -t tmpfs tmpfs /tmp
+. /etc/netapp-root.conf
+hostname "$ROOT_HOSTNAME"
+
+recover() {
+    echo 'PERSISTENT_ROOT_FAILED: serial recovery shell; no disk initialization attempted.'
+    while true; do
+        setsid cttyhack sh </dev/console >/dev/console 2>&1
+        sleep 1
+    done
+}
+
+run_tool() {
+    tool=$1
+    shift
+    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2 \
+        --library-path /usr/lib/x86_64-linux-gnu "/usr/sbin/$tool" "$@"
+}
+
+for module in pm80xx sd_mod raid1 crc32c_generic ext4; do
+    modprobe "$module" || recover
+done
+for attempt in $(seq 1 30); do
+    partitions=0
+    for partition in /sys/class/block/sd*1; do
+        [ ! -f "$partition/partition" ] || partitions=$((partitions + 1))
+    done
+    [ "$partitions" -lt 2 ] || break
+    sleep 1
+done
+run_tool mdadm --assemble --scan --run --config=/etc/mdadm.conf || recover
+[ "$(run_tool blkid -s UUID -o value /dev/md0)" = "$ROOT_UUID" ] || recover
+run_tool e2fsck -p /dev/md0
+fsck_status=$?
+[ "$fsck_status" -le 1 ] || recover
+mkdir -p /newroot
+mount -t ext4 -o rw /dev/md0 /newroot || recover
+[ -x /newroot/sbin/init ] || recover
+for directory in proc sys dev run; do
+    mount --move "/$directory" "/newroot/$directory" || recover
+done
+echo 'PERSISTENT_ROOT_READY: handing off to the installed OS.'
+exec switch_root /newroot /sbin/init

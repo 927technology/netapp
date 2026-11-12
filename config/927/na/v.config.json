@@ -1,0 +1,219 @@
+{
+  "linux": {
+    "administrator": {
+      "authorized_key_file": "~/git/homelab/keys/srx.pub",
+      "name": "admin"
+    },
+    "boot": {
+      "console": "ttyS0",
+      "kernel": "6.12.107+deb13-amd64",
+      "kernel_options": "earlycon=uart8250,io,0x3f8 nokaslr loglevel=4 rdinit=/init panic=0 ro noresume maxcpus=1",
+      "loader_device": "boot0",
+      "persistent_image": "/x86_64/freebsd/image1/kernel",
+      "recovery_image": "/LINUX.ELF"
+    },
+    "customer": "927",
+    "hostname": "na",
+    "management": {
+      "address": "192.168.1.154/24",
+      "dns": [
+        "192.168.1.1"
+      ],
+      "gateway": "192.168.1.1",
+      "interface": "e0m",
+      "mac": "00:a0:98:53:e6:43"
+    },
+    "os": {
+      "architecture": "amd64",
+      "distribution": "debian",
+      "release": "trixie",
+      "root": {
+        "array": "/dev/md0",
+        "array_name": "na-root",
+        "array_uuid": "91c5476d:8fdd49c1:9c1de72d:5b21cf1b",
+        "filesystem": "ext4",
+        "filesystem_uuid": "4df04fcf-8c83-41b1-8596-af06b1587b71",
+        "partition_sectors": 134217728,
+        "partition_start_sector": 2048
+      },
+      "swap_bytes": 2147483648,
+      "system_disks": [
+        {
+          "capacity_bytes": 600127266816,
+          "serial": "74H0A0AKFUZ6",
+          "wwn": "50000395a81bb2c4"
+        },
+        {
+          "capacity_bytes": 600127266816,
+          "serial": "74I0A02PFUZ6",
+          "wwn": "50000395a8203c48"
+        }
+      ],
+      "timezone": "Etc/UTC"
+    },
+    "storage": {
+      "bond": {
+        "interface": "bond0",
+        "lacp_rate": "fast",
+        "members": [
+          {
+            "interface": "e1a",
+            "mac": "00:a0:98:54:5d:d2"
+          },
+          {
+            "interface": "e1b",
+            "mac": "00:a0:98:54:5d:d3"
+          }
+        ],
+        "mode": "802.3ad",
+        "transmit_hash_policy": "layer3+4"
+      },
+      "data_disk_count": 22,
+      "data_disks": [
+        {
+          "capacity_bytes": 600127266816,
+          "serial": "74D0A05IFUZ6",
+          "wwn": "50000395a8138f84"
+        },
+        {
+          "capacity_bytes": 600127266816,
+          "serial": "74F0A005FUZ6",
+          "wwn": "50000395a819eae4"
+        },
+        {
+          "capacity_bytes": 600127266816,
+          "serial": "74F0A009FUZ6",
+          "wwn": "50000395a819eb2c"
+        },
+        {
+          "capacity_bytes": 600127266816,
+          "serial": "74F0A04ZFUZ6",
+          "wwn": "50000395a81a03b0"
+        },
+        {
+          "capacity_bytes": 600127266816,
+          "serial": "74F0A06YFUZ6",
+          "wwn": "50000395a81a0c18"
+        },
+        {
+          "capacity_bytes": 600127266816,
+          "serial": "74F0A1A2FUZ6",
+          "wwn": "50000395a81afbc8"
+        },
+        {
+          "capacity_bytes": 600127266816,
+          "serial": "74G0A016FUZ6",
+          "wwn": "50000395a81b167c"
+        },
+        {
+          "capacity_bytes": 600127266816,
+          "serial": "74H0A021FUZ6",
+          "wwn": "50000395a81b6a84"
+        },
+        {
+          "capacity_bytes": 600127266816,
+          "serial": "74H0A0I2FUZ6",
+          "wwn": "50000395a81bc530"
+        },
+        {
+          "capacity_bytes": 600127266816,
+          "serial": "74H0A0IRFUZ6",
+          "wwn": "50000395a81bc648"
+        },
+        {
+          "capacity_bytes": 600127266816,
+          "serial": "74H0A0LRFUZ6",
+          "wwn": "50000395a81bdac0"
+        },
+        {
+          "capacity_bytes": 600127266816,
+          "serial": "74H0A0O8FUZ6",
+          "wwn": "50000395a81bea7c"
+        },
+        {
+          "capacity_bytes": 600127266816,
+          "serial": "74H0A0OIFUZ6",
+          "wwn": "50000395a81bf1e4"
+        },
+        {
+          "capacity_bytes": 600127266816,
+          "serial": "74H0A0P0FUZ6",
+          "wwn": "50000395a81bf598"
+        },
+        {
+          "capacity_bytes": 600127266816,
+          "serial": "74H0A0P7FUZ6",
+          "wwn": "50000395a81bf840"
+        },
+        {
+          "capacity_bytes": 600127266816,
+          "serial": "74H0A0Q8FUZ6",
+          "wwn": "50000395a82007dc"
+        },
+        {
+          "capacity_bytes": 600127266816,
+          "serial": "74H0A0R0FUZ6",
+          "wwn": "50000395a82013c4"
+        },
+        {
+          "capacity_bytes": 600127266816,
+          "serial": "74H0A0R5FUZ6",
+          "wwn": "50000395a8201490"
+        },
+        {
+          "capacity_bytes": 600127266816,
+          "serial": "74I0A02XFUZ6",
+          "wwn": "50000395a8203c9c"
+        },
+        {
+          "capacity_bytes": 600127266816,
+          "serial": "74I0A07XFUZ6",
+          "wwn": "50000395a82044bc"
+        },
+        {
+          "capacity_bytes": 600127266816,
+          "serial": "74I0A08QFUZ6",
+          "wwn": "50000395a820471c"
+        },
+        {
+          "capacity_bytes": 600127266816,
+          "serial": "74I0A09GFUZ6",
+          "wwn": "50000395a8204a9c"
+        }
+      ],
+      "data_layout": {
+        "array": "/dev/md1",
+        "array_uuid": "fc1f8d3d:cb9f1f61:625830d0:458262df",
+        "chunk_kib": 512,
+        "level": "raid6",
+        "member_layout": "whole-disk",
+        "metadata": "1.2",
+        "name": "na-data",
+        "volume_group": "nas"
+      },
+      "logical_volumes": [],
+      "network": {
+        "address": "10.1.252.10/24",
+        "gateway": "10.1.252.1",
+        "interface": "storage197",
+        "vlan_id": 197
+      },
+      "protocols": [
+        "smb",
+        "nfs",
+        "iscsi"
+      ],
+      "shares": [],
+      "switch": {
+        "aggregate": "ae0",
+        "device": "ex.927.i.927.technology",
+        "ports": [
+          "xe-0/2/0",
+          "xe-0/2/1"
+        ],
+        "vlan_name": "WHT_MGMT-STORAGE"
+      },
+      "targets": []
+    }
+  }
+}

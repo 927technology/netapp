@@ -1,0 +1,21 @@
+{
+  "console_host": "mrv.na_1",
+  "customer": "927",
+  "drivers": [
+    "e1000e",
+    "igb",
+    "ixgbe",
+    "pm80xx",
+    "sd_mod",
+    "sg"
+  ],
+  "environment": "na",
+  "kernel": "6.12.107+deb13-amd64",
+  "management": {
+    "address": "192.168.1.154/24",
+    "mac": "00:a0:98:53:e6:43",
+    "probe_url": "http://192.168.1.41:8765/manifest.json"
+  },
+  "mode": "ram-only",
+  "storage_writes": false
+}

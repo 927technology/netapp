@@ -1,0 +1,32 @@
+{
+  "automatic_startup": {
+    "change_only_after_manual_boot_verified": true,
+    "use_existing_primary_boot_path": true
+  },
+  "backup": {
+    "directory": "/tmp/tf_lab/netapp-eusb-backup",
+    "required_bytes": 2030043136,
+    "verify_source_stream_sha256": true
+  },
+  "boot_file": {
+    "destination": "/x86_64/freebsd/image1/kernel",
+    "original_backup": "/x86_64/freebsd/image1/kernel.ontap",
+    "original_sha256": "b51eeb37a1e20ef30a40c489441bf17f0cbf6b10ed975fd6bfe225a45994d053",
+    "ram_backup": "/x86_64/freebsd/image1/kernel.ram",
+    "ram_sha256": "ef3d5994e7ce0ac1f9df3812086f6dd31edf29d690bf8703df13e501cebede6f",
+    "sha256": "bcf985043c69d2581a454695910584819502243acd99db2cd74c3bb4f5efc8ed",
+    "source": "/tmp/tf_lab/netapp-persistent/transfer/PERSIST.ELF"
+  },
+  "console_host": "mrv.na_1",
+  "customer": "927",
+  "environment": "na",
+  "mode": "persistent-root-from-eusb",
+  "preserve_existing_boot_files": true,
+  "target": {
+    "expected_partition_start_sectors": 252,
+    "expected_sectors": 3964928,
+    "filesystem": "FAT16",
+    "model": "eUSB DISK",
+    "serial": "B8F0022700200059"
+  }
+}
